@@ -1,4 +1,4 @@
-var url = 'https://jsonplaceholder.typicode.com/posts'
+var url = 'https://digimon-api.vercel.app/api/digimon'
 
 var contenido = document.querySelector("#contenido")
 
@@ -10,10 +10,10 @@ fetch(url)
     //for (var i =0; i<datos.length; i++)     item[i].userId
         contenido.innerHTML +=  `
             <tr>
-                <th >${item.userId}</th>
-                <td>${item.id}</td>
-                <td>${item.title}</td>
-                <td>${item.body}</td>
+                <th >${item.name}</th>
+                <td>${item.img}</td>
+                <td>${item.level}</td>
+                
             </tr>
         `
         if (item.id == 10) {break;}
