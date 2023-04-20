@@ -7,15 +7,16 @@ fetch(url)
   .then((datos) => {
     for (item of datos) {
       contenido.innerHTML += `
+      <div class="col-md-3" id="carta">
         <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src=${item.img} alt="Card image cap">
-        <div class="card-body">
-        <h5 class="card-title">${item.name}</h5>
-        <p class="card-text">${item.level}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+            <img class="card-img-top" src=${item.img} alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${item.name}</h5>
+                <p class="card-text">${item.level}</p>
+
+            </div>
         </div>
-        </div>      
-      
+    </div>
         `;
 
       if (item.id == 10) {
