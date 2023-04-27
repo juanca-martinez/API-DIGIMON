@@ -21,7 +21,7 @@ fetch(url)
     </div>
         `;
 
-      if (item.id == 10) {
+      if (numero == 100) {
         break;
       }
     }
