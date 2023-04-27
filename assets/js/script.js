@@ -10,7 +10,7 @@ fetch(url)
       numero++
       contenido.innerHTML += `
       <div class="col-md-4" id="carta">
-        <div class="card bg-info" style="width: 18rem;">
+        <div class="card">
             <img class="card-img-top" src=${item.img} alt="Card image cap">
             <div class="card-body">
                 <h4 class="card-title text-white">${"#"+numero+" "}${item.name}</h4>
@@ -33,3 +33,4 @@ fetch(url)
                 <td>${item.level}</td>
                 
             </tr> */
+            
