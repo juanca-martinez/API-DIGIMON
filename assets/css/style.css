@@ -5,6 +5,9 @@ main {
 #carta{
     margin-top: 10px;
 }
+.ver:hover{
+	transform: scale(1.2);
+}
 
 .card-title{
     margin-top: -30px;
