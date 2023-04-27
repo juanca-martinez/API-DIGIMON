@@ -1,5 +1,4 @@
 var url = "https://digimon-api.vercel.app/api/digimon?";
-
 var contenido = document.querySelector("#contenido");
 var numero = 0
 
@@ -26,6 +25,8 @@ fetch(url)
       }
     }
   });
+
+  
 
 /* <tr>
                 <th >${item.name}</th>
