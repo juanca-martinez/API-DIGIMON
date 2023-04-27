@@ -37,16 +37,7 @@ fetch(url)
     for (item of datos) {
       numero++
       contenido.innerHTML += `
-      <div class="col-md-4" id="carta">
-        <div class="card">
-            <img class="card-img-top" src=${item.img} alt="Card image cap">
-            <div class="card-body">
-                <h4 class="card-title text-white ver">${"#"+numero+" "}${item.name}</h4>
-                <p class="card-text text-light bg-dark text-center">${item.level}</p>
-
-            </div>
-        </div>
-    </div>
+      <img src=${item.img} alt=${item.name} />
         `;
 
       if (numero == 100) {
@@ -62,6 +53,18 @@ fetch(url)
                 <th >${item.name}</th>
                 <td><img src=${item.img} alt=${item.name} /></td>
                 <td>${item.level}</td>
+
+
+                <div class="col" id="carta">
+        <div class="card">
+            <img class="card-img-top" src=${item.img} alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title text-white ver">${"#"+numero+" "}${item.name}</h4>
+                <p class="card-text text-light bg-dark text-center">${item.level}</p>
+
+            </div>
+        </div>
+    </div>
                 
             </tr> */
             
